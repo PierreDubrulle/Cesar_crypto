@@ -24,7 +24,7 @@ pub fn process_crypto(message:Vec<char>, cle:u8) -> String
                 }
             }
         }
-        if l.is_ascii_punctuation()
+        if l.is_ascii_punctuation() || l.is_numeric()
         {
             result_vec.push(l)
         }
